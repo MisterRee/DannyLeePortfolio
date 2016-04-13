@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="header-footer_style.css">
+    <link rel="stylesheet" type="text/css" href="project_style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <title>DannyLee</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+    "use strict";
+    $(document).ready(function(){
+      init();
+    });
+
+    var init = function(){
+      $(".descBox").click(function(){
+        var temp = this.children;
+        for(var i = 1; i< temp.length; i++){
+          if(temp[i].style.display == "none"){
+            $(this.children[i]).show(400);
+          } else {
+            $(this.children[i]).hide(400);
+          }
+        }
+      });
+    };
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="headLeft">
+        <a href="index.html">
+          <h1>Danny Lee</h1>
+        </a>
+      </div>
+      <div class="headRight">
+        <div class="headTab">
+          <p>Work</p>
+        </div>
+        <div class="headTab">
+          <p>Contact</p>
+        </div>
+        <div class="headTab">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mainTop">
+        <h1>Project Rhapsody</h1>
+      </div>
+      <div class="mainLeft">
+        <div class="descBox">
+          <h2>Links</h2>
+          <ul>
+            <a href="https://github.com/eric-fonseca/Rhapsody">
+              <li><strong>Github Portal</strong></li></a>
+            <a href="http://www.rockhall.com/media/assets/files/Exhibit_Guide_Winter_2015-16_lo_res.pdf">
+              <li><strong>RockHall Museum Exhibits</strong></li></a>
+            <li></li>
+          </ul>
+        </div>
+        <div class="descBox">
+          <h2>Problem</h2>
+          <p>The Rock & Roll Hall of Fame has come to RIT's New Media department to look for solutions to
+             various problems that naturally occur in an extensively growing modern museum.</p>
+          <p>The issue at hand that my team of designers and other developers decided to tackle was a lack of
+             interactivity, personalization, and immersion in the non-traditional museum experience.</p>
+          <p>Therefore the main problem we sought to our address was that in a museum about self-expression,
+             there was no opportunity for visitors to do so themselves.</p>
+        </div>
+        <div class="descBox">
+          <h2>Solution</h2>
+          <p>In our discussions, we painted an idea that the modern museum should not only showcase,
+            but entrance visitors to an experience.</p>
+          <p>An idea of a collaborative, musical makerspace where visitors could cultivate creativity,
+            encourage collaboration, entertain and educate was born.</p>
+          <p>This is Project Rhapsody, where the visitor becomes the exhibit, and the museum the audience.</p>
+        </div>
+      </div>
+      <div class="mainRight">
+      </div>
+    </main>
+    <footer>
+      <div class="footTop">
+        <p>I'm Danny Lee, a New Media Developer planning to conquer the world wide web.</p>
+      </div>
+      <div class="footBottom">
+      </div>
+    </footer>
+  </body>
+</html>

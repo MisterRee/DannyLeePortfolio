@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  height: 100%;
+}
+header{
+  width: 100%;
+  height: 100px;
+}
+  .headLeft{
+    text-align: center;
+    float: left;
+    width: 40%;
+    height: 100%;
+  }
+    .headLeft a{
+      text-decoration: none;
+    }
+      .headLeft a:link {
+        color: #000;
+      }
+      .headLeft a:visited{
+        color: #000;
+      }
+      .headLeft a:active{
+        color: #000;
+      }
+  .headRight{
+    float: right;
+    width: 60%;
+    height: 100%;
+  }
+    .headTab{
+      float: left;
+      height: 100%;
+      padding-left: 1em;
+    }
+footer{
+  width: 100%;
+  height: 100px;
+}
+  .footTop{
+    text-align: center;
+  }

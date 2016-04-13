@@ -1,0 +1,44 @@
+h1, h2, p, li{
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+main{
+  overflow: auto;
+  width: 60%;
+  margin: auto;
+}
+  .mainTop{
+    text-align: center;
+  }
+  .mainLeft{
+    float: left;
+    width: 40%;
+    min-width: 120px;
+  }
+    .descBox{
+      margin: 10px;
+    }
+      .descBox h2{
+        color: #000;
+      }
+      .descBox h2:hover{
+        color: #616161;
+      }
+      .descBox ul{
+        list-style: none;
+        padding-left: 0px;
+      }
+      .descBox li{
+        color: #616161;
+        margin-bottom: 1em;
+      }
+      .descBox li:hover{
+        color: #000;
+      }
+  .mainRight{
+    float: right;
+    width: 60%;
+    min-width: 180px;
+  }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="header-footer_style.css">
+    <link rel="stylesheet" type="text/css" href="index_style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <title>DannyLee</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+      "use strict";
+      $(document).ready(function(){
+        init();
+      });
+
+      var init = function(){
+        var temp1 = $(".projectArticle").children().children();
+        var temp2 = $(".projectArticle").children().children().children();
+
+        $(".projectArticle").mouseover(function(){
+          var temp1 = this.children[0];
+          var temp2 = this.children[0].children[2];
+          console.log(this.children[0]);
+          temp1.children[0].style.display = "inline";
+          temp1.children[1].style.display = "none";
+          temp1.children[2].style.backgroundColor = "#A1A1A1";
+          temp2.children[0].style.color = "#000";
+          temp2.children[1].style.color = "#000";
+          this.style.borderColor = "#A1A1A1";
+          this.style.borderColor = "#A1A1A1";
+        });
+        $(".projectArticle").mouseleave(function(){
+          var temp1 = this.children[0];
+          var temp2 = this.children[0].children[2];
+          temp1.children[0].style.display = "none";
+          temp1.children[1].style.display = "inline";
+          temp1.children[2].style.backgroundColor = "#E1E1E1";
+          temp2.children[0].style.color = "#616161";
+          temp2.children[1].style.color = "#616161";
+          this.style.borderColor = "#E1E1E1";
+          this.style.borderColor = "#E1E1E1";
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="headLeft">
+        <a href="index.html">
+          <h1>Danny Lee</h1>
+        </a>
+      </div>
+      <div class="headRight">
+        <div class="headTab">
+          <p>Work</p>
+        </div>
+        <div class="headTab">
+          <p>Contact</p>
+        </div>
+        <div class="headTab">
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--
+      <canvas class="main">
+      </canvas>
+      -->
+      <div class="articleRow">
+        <article class="projectArticle">
+          <a href="./base_project.html">
+            <img class="articleImageColor" src="./Project_Rhapsody_Page/Logo.png" alt="">
+            <img class="articleImageGray" src="./Project_Rhapsody_Page/LogoGray.png" alt="">
+            <div>
+              <h1>Project Rhapsody</h1>
+              <p>User Interface Development</p>
+            </div>
+          </a>
+        </article>
+        <article class="projectArticle">
+          <a href="./base_project.html">
+            <img class="articleImageColor" src="./Project_Rhapsody_Page/Logo.png" alt="">
+            <img class="articleImageGray" src="./Project_Rhapsody_Page/LogoGray.png" alt="">
+            <div>
+              <h1>Project Rhapsody</h1>
+              <p>User Interface Development</p>
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="articleRow">
+        <article class="projectArticle">
+          <a href="./base_project.html">
+            <img class="articleImageColor" src="./Project_Rhapsody_Page/Logo.png" alt="">
+            <img class="articleImageGray" src="./Project_Rhapsody_Page/LogoGray.png" alt="">
+            <div>
+              <h1>Project Rhapsody</h1>
+              <p>User Interface Development</p>
+            </div>
+          </a>
+        </article>
+        <article class="projectArticle">
+          <a href="./base_project.html">
+            <img class="articleImageColor" src="./Project_Rhapsody_Page/Logo.png" alt="">
+            <img class="articleImageGray" src="./Project_Rhapsody_Page/LogoGray.png" alt="">
+            <div>
+              <h1>Project Rhapsody</h1>
+              <p>User Interface Development</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="footTop">
+        <p>I'm Danny Lee, a New Media Developer planning to conquer the world wide web.</p>
+      </div>
+      <div class="footBottom">
+      </div>
+    </footer>
+  </body>
+</html>
