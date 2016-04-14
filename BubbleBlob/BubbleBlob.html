@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./../header-footer_style.css">
+    <link rel="stylesheet" type="text/css" href="./BubbleBlob.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <title>DannyLee</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="./../Project_Script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="headLeft">
+        <a href="./../index.html">
+          <h1>Danny Lee</h1>
+        </a>
+      </div>
+      <div class="headRight">
+        <div class="headTab" id="leftMostTab">
+          <p>Work</p>
+        </div>
+        <div class="headTab">
+          <p>Contact</p>
+        </div>
+        <div class="headTab">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mainTop">
+        <h1>BubbleBlob</h1>
+      </div>
+      <div class="mainWrap">
+        <div class="mainLeft">
+          <div class="linkBox">
+            <h2>Links</h2>
+            <h3>Languages & Code</h3>
+            <ul>
+              <a href="https://github.com/MisterRee/BubbleBlob">
+                <li id="floaterLi"><strong>Github Portal</strong></li>
+                <img src="./../github.png" alt=""></a>
+                <li><strong>Front-End Canvas.js</strong></li></a>
+                <li><strong>Back-End Node.js</strong></li></a>
+                <li><strong>Back-End Websockets</strong></li></a>
+            </ul>
+          </div>
+          <div class="descBox">
+            <h2>Premise</h2>
+            <p>Right as a user connects, he or she is given a randomly generated color as identification.</p>
+            <p>Players fight over claiming as many sporadically appearing white bubbles as they can by passing their mouse over them.</p>
+            <p>Players must also avoid other player's bubbles or else all of their claimed bubbles revert back to white, unclaimed bubbles.</p>
+          </div>
+          <div class="descBox">
+            <h2>Execution</h2>
+            <p>Multiple users interact with each other using a websocket server.
+              The server sends packets of simple data to each connected user multiple times a second to keep things animated smoothly.</p>
+            <p>The node server is used to do all calculations each frame for accuracy through every client.
+               The front-end client only has to draw the streamed data and stream mouse coordinate data back to the websocket.</p>
+          </div>
+        </div>
+        <div class="mainRight">
+          <div class="imageBox">
+            <a href="https://bubbleblob.herokuapp.com">
+              <img src="Capture.png" alt="">
+            </a>
+            <div class="imageDesc">
+              <h2>Click for Live Demo</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainBottom">
+        <h2>Live on Heroku</h2>
+        <p>Refresh demo page to add more sockets.</p>
+        <p>Have fun!</p>
+      </div>
+    </main>
+    <footer>
+      <div class="footTop">
+        <p>Danny Lee, a New Media Developer thats going to make his own medium one day.</p>
+      </div>
+      <div class="footBottom">
+      </div>
+    </footer>
+  </body>
+</html>

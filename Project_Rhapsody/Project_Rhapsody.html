@@ -3,43 +3,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./../header-footer_style.css">
-    <link rel="stylesheet" type="text/css" href="./../project_style.css">
+    <link rel="stylesheet" type="text/css" href="./Project_Rhapsody.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <title>DannyLee</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script>
-    "use strict";
-    $(document).ready(function(){
-      init();
-    });
-
-    var init = function(){
-      $(".descBox").click( function(){
-        var temp = this.children;
-        for(var i = 1; i< temp.length; i++){
-          if(temp[i].style.display == "none"){
-            $(this.children[i]).show(400);
-          } else {
-            $(this.children[i]).hide(400);
-          }
-        }
-      });
-
-      $(".imageBox").hover( hoverOn, hoverOff );
-
-      function hoverOn( e ){
-        $(this.children[1]).animate({
-          "opacity":"0.5"
-        }, {queue:false, duration:250});
-      }
-
-      function hoverOff( e ){
-        $(this.children[1]).animate({
-          "opacity":"0.0"
-        }, {queue:false, duration:250});
-      }
-    };
-    </script>
+    <script src="./../Project_Script.js"></script>
   </head>
   <body>
     <header>
@@ -49,7 +17,7 @@
         </a>
       </div>
       <div class="headRight">
-        <div class="headTab">
+        <div class="headTab" id="leftMostTab">
           <p>Work</p>
         </div>
         <div class="headTab">
@@ -63,79 +31,86 @@
       <div class="mainTop">
         <h1>Project Rhapsody</h1>
       </div>
-      <div class="mainLeft">
-        <div class="linkBox">
-          <h2>Links</h2>
-          <h3>Clients</h3>
-          <ul>
+      <div class="mainWrap">
+        <div class="mainLeft">
+          <div class="linkBox">
+            <h2>Links</h2>
+            <h3>Clients</h3>
+            <ul>
+              <a href="http://www.rockhall.com/media/assets/files/Exhibit_Guide_Winter_2015-16_lo_res.pdf">
+                <li><strong>RockHall Museum Exhibits</strong></li></a>
+              <a href="http://www.rit.edu/imagine/about.php">
+                <li><strong>Imagine RIT</strong></li></a>
+            </ul>
+            <h3>Languages & Code</h3>
+            <ul>
+              <a href="https://github.com/eric-fonseca/Rhapsody">
+                <li id="floaterLi"><strong>Github Portal</strong></li>
+                <img src="./../github.png" alt=""></a>
+              <a href="https://processing.org/">
+                <li><strong>Processing.js</strong></li></a>
+              <a href="http://code.compartmental.net/tools/minim/">
+                <li><strong>Minim Library</strong></li></a>
+              <a href="http://vialab.science.uoit.ca/smt/tutorial/one.php">
+                <li><strong>Simple Multi-Touch</strong></li></a>
+            </ul>
+          </div>
+          <div class="descBox">
+            <h2>Problem</h2>
+            <p>The Rock & Roll Hall of Fame has come to RIT's New Media department to look for solutions to
+               various problems that naturally occur in an extensively growing modern museum.</p>
+            <p>The issue at hand that my team of designers and other developers decided to tackle was a lack of
+               interactivity, personalization, and immersion in the non-traditional museum experience.</p>
+            <p>Therefore the main problem we sought to our address was that in a museum about self-expression,
+               there was no opportunity for visitors to do so themselves.</p>
+          </div>
+          <div class="descBox">
+            <h2>Solution</h2>
+            <p>In our discussions, we painted an idea that the modern museum should not only showcase,
+              but entrance visitors to an experience.</p>
+            <p>An idea of a collaborative, musical makerspace where visitors could cultivate creativity,
+              encourage collaboration, entertain and educate was born.</p>
+            <p>This is Project Rhapsody, where the visitor becomes the exhibit, and the museum the audience.</p>
+          </div>
+          <div class="descBox">
+            <h2>Personal Involvement</h2>
+            <p>I personally handled all user interface development as well as the data structure design of the project.
+              The detail-orientated project was refined by both designers and developers.</p>
+            <p>By developing teamwork skills, I managed to produce designer-intended aesthetic and functionality.
+              My own input adjusted the product to better fit the platform and user experience,
+              as well as learning importaint design concepts from team members along the way.</p>
+          </div>
+        </div>
+        <div class="mainRight">
+          <div class="imageBox">
+            <img src="1.jpg" alt="">
+            <div class="imageDesc">
+              <h2>Main Screen</h2>
+            </div>
+          </div>
+          <div class="imageBox">
+            <img src="2.png" alt="">
+            <div class="imageDesc">
+              <h2>User Interface</h2>
+            </div>
+          </div>
+          <div id="clientImageBox">
             <a href="http://www.rockhall.com/media/assets/files/Exhibit_Guide_Winter_2015-16_lo_res.pdf">
-              <li><strong>RockHall Museum Exhibits</strong></li></a>
+              <img src="3.jpg" alt=""></a>
             <a href="http://www.rit.edu/imagine/about.php">
-              <li><strong>Imagine RIT</strong></li></a>
-          </ul>
-          <h3>Languages & Code</h3>
-          <ul>
-            <a href="https://github.com/eric-fonseca/Rhapsody">
-              <li id="floaterLi"><strong>Github Portal</strong></li>
-              <img src="github.png" alt=""></a>
-            <a href="https://processing.org/">
-              <li><strong>Processing.js</strong></li></a>
-            <a href="http://code.compartmental.net/tools/minim/">
-              <li><strong>Minim Library</strong></li></a>
-            <a href="http://vialab.science.uoit.ca/smt/tutorial/one.php">
-              <li><strong>Simple Multi-Touch</strong></li></a>
-          </ul>
-        </div>
-        <div class="descBox">
-          <h2>Problem</h2>
-          <p>The Rock & Roll Hall of Fame has come to RIT's New Media department to look for solutions to
-             various problems that naturally occur in an extensively growing modern museum.</p>
-          <p>The issue at hand that my team of designers and other developers decided to tackle was a lack of
-             interactivity, personalization, and immersion in the non-traditional museum experience.</p>
-          <p>Therefore the main problem we sought to our address was that in a museum about self-expression,
-             there was no opportunity for visitors to do so themselves.</p>
-        </div>
-        <div class="descBox">
-          <h2>Solution</h2>
-          <p>In our discussions, we painted an idea that the modern museum should not only showcase,
-            but entrance visitors to an experience.</p>
-          <p>An idea of a collaborative, musical makerspace where visitors could cultivate creativity,
-            encourage collaboration, entertain and educate was born.</p>
-          <p>This is Project Rhapsody, where the visitor becomes the exhibit, and the museum the audience.</p>
-        </div>
-        <div class="descBox">
-          <h2>Personal Involvement</h2>
-          <p>I personally handled all user interface development as well as the data structure design of the project.
-            This was a multidisciplinary project, and was my first experience with working with designers to the lead work.</p>
-          <p>By developing teamwork skills, I managed to produce designer-intended aesthetic and functionality.
-            My own input adjusted the product to better fit the platform and user experience,
-            as well as learning importaint design concepts from team members along the way.</p>
+              <img src="4.png" alt=""></a>
+          </div>
         </div>
       </div>
-      <div class="mainRight">
-        <div class="imageBox">
-          <img src="1.jpg" alt="">
-          <div class="imageDesc">
-            <h2>Main Screen</h2>
-          </div>
-        </div>
-        <div class="imageBox">
-          <img src="2.png" alt="">
-          <div class="imageDesc">
-            <h2>User Interface</h2>
-          </div>
-        </div>
-        <div id="clientImageBox">
-          <a href="http://www.rockhall.com/media/assets/files/Exhibit_Guide_Winter_2015-16_lo_res.pdf">
-            <img src="3.jpg" alt=""></a>
-          <a href="http://www.rit.edu/imagine/about.php">
-            <img src="4.png" alt=""></a>
-        </div>
+      <div class="mainBottom">
+        <h2>Release</h2>
+        <p>Scheduled for May 7th, 2016 at Imagine RIT.</p>
+        <p>Search for Team Rhapsody!</p>
       </div>
     </main>
     <footer>
       <div class="footTop">
-        <p>Danny Lee, a New Media Developer that wants to make his own medium.</p>
+        <p>Danny Lee, a New Media Developer thats going to make his own medium one day.</p>
       </div>
       <div class="footBottom">
       </div>

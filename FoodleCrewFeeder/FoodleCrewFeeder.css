@@ -25,6 +25,9 @@ main{
       .descBox .linkBox{
         margin: 10px;
       }
+        #brickhack{
+          color: #F58A39;
+        }
         .descBox h2, .linkBox h2, .descBox p{
           color: #000;
         }
@@ -63,13 +66,14 @@ main{
     }
       .imageBox img, #clientImageBox img{
         margin-top: 2em;
+        margin-left: 2em;
       }
       #clientImageBox{
+        display: inline-block;
         width: 630px;
       }
       #clientImageBox img{
         float: left;
-        margin-left: 2em;
       }
       .imageDesc{
         text-align: center;
