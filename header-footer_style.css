@@ -15,14 +15,11 @@ header{
     .headLeft a{
       text-decoration: none;
     }
-      .headLeft a:link {
+      .headLeft a:link, .headLeft a:visited, .headLeft a:active{
         color: #000;
       }
-      .headLeft a:visited{
-        color: #000;
-      }
-      .headLeft a:active{
-        color: #000;
+      .headLeft a:hover{
+        color: #616161;
       }
   .headRight{
     float: right;

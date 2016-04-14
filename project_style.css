@@ -1,4 +1,4 @@
-h1, h2, p, li{
+h1, h2, h3, p, li{
   font-family: 'Montserrat', sans-serif;
 }
 a{
@@ -6,7 +6,7 @@ a{
 }
 main{
   overflow: auto;
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
   .mainTop{
@@ -14,31 +14,64 @@ main{
   }
   .mainLeft{
     float: left;
-    width: 40%;
-    min-width: 120px;
+    width: 35%;
+    min-width: 367.5px;
+    padding-right: 5%;
   }
-    .descBox{
+    .descBox .linkBox{
       margin: 10px;
     }
-      .descBox h2{
+      .descBox h2, .linkBox h2, .descBox p{
         color: #000;
       }
-      .descBox h2:hover{
+      .linkBox h3{
+        color: #000;
+        padding-left: 1em;
+      }
+      .descBox h2:hover, .descBox p:hover{
         color: #616161;
       }
-      .descBox ul{
+      .descBox ul, .linkBox ul{
         list-style: none;
         padding-left: 0px;
       }
-      .descBox li{
+      .descBox li, .linkBox li{
         color: #616161;
         margin-bottom: 1em;
       }
-      .descBox li:hover{
+      .linkBox li{
+        padding-left: 2em;
+      }
+      .linkBox li:hover{
         color: #000;
+      }
+      #floaterLi, .linkBox img{
+        display: inline-block;
+      }
+      .linkBox img{
+        transform: translate(0, 6px);
       }
   .mainRight{
     float: right;
+    overflow: hidden;
     width: 60%;
-    min-width: 180px;
+    min-width: 630px;
   }
+    .imageBox img, #clientImageBox img{
+      margin-top: 2em;
+    }
+    #clientImageBox{
+      width: 630px;
+    }
+    #clientImageBox img{
+      float: left;
+      margin-left: 2em;
+    }
+    .imageDesc{
+      text-align: center;
+      background-color: #FFF;
+      opacity: 0.0;
+      transform: translate(0px,-75px);
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }
